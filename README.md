@@ -27,10 +27,28 @@ Medical Expenditure Panel Survey:
 * Machine Learning:
     * Linear Regression, Random Forest Regressor
 
-
 # Key Insights
+1. Healthcare Costs are Highly Skewed
+    - Medical expenditure data is heavily right-skewed. Only a small percentage of individuals account large shares of the total costs. This prediction suggests that log-scaling can improve the model performance.
+2. Age is a Strong Predictor
+    - Healthcare expenditures increase significantly with age. As shown in the data visualizations, older individuals consistently show higher predicted costs, reflecting greater healthcare utilization and chronic conditions.
+3. Random Forest Model Outperformed Linear Regression
+    - The Random Forest Model ended up capturing the nonlinear relationships and interactions between variables better than the linear regression, resulting in:
+        - Lower r^2 value
+        - Better handling of skewed distribution
+        - Improved robustness to outliers
 
 # Future Improvements
+1. Utilize Additional Predictors and Variables
+    - Incorporate chronic condition indicators
+    - Add interaction terms
+2. Advanced Modeling
+    - Use Gradient Bosting Models
+    - Create Neural Networks for nonlinear pattern recognition
+3. Real-World Considerations
+    - Build interactive dashboard using Streamlit
+    - Enable scenario analysis for underwriting simulations
+    - Automate program for new MEPS data
 
 # Author
 **Kevin Chi**  
